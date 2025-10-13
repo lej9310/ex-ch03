@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 import org.slf4j.Logger;
@@ -258,31 +259,56 @@ public class MyService {
 	public String ex89_streamAPI() {
 		// 1. Integer 배열 생성 및 List 변환
 		Integer[] integerArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-		// Arrays.asList: 배열로부터 List 인터페이스 객체 생성
-		// 제네릭스<> 사용 >> 리스트의 타입 설정 >> String 들어가면 오류
-		List<Integer> list = Arrays.asList(integerArray);
-		List<Integer> evenList = new ArrayList<Integer>();
+		List<Integer> list = Arrays.asList(integerArray); // Arrays.asList: 배열로부터 List 인터페이스 객체 생성
+		List<Integer> evenList = new ArrayList<Integer>(); // 제네릭스<> 사용 >> 리스트의 타입 설정 >> String 들어가면 오류
 
-		// 2. 스트림 API 활용: 짝수 필터링
+		String result = "";
+
+		// 2. for문 활용: 짝수 필터링
 		for (int i = 0; i < list.size(); i++) {
 			Integer number = list.get(i);
 			if (number % 2 == 0) { // 2로 나눴을 때의 나머지가 0이면 2의 배수이다.
 				evenList.add(number);
+				result += number + "<br>";
 			}
+			// Log.info(result);
 		}
 
 		// 스트림 API를 사용하지 않은 짝수 필터링 >> for문
-//		for (int i = 0; i < evenList.size(); i++) {
-//			System.out.println(evenList.get(i));
-//		}
+		for (int i = 0; i < evenList.size(); i++) {
+			System.out.println(evenList.get(i));
+		}
 
-		String msg = "ex89_streamAPI-리스트의 짝수 필터링 결과: " + evenList;
+		String msg = "ex89_for문을 활용한 리스트의 짝수 필터링 결과:<br>" + result;
 		System.out.println(msg);
 		return msg;
 	}
 
 	// 3-3-4 ===========================================
-	Integer[] integerArray = new Integer[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-	List
+	public String ex90_streamAPI() {
+		// 1. Integer 배열 생성 및 List 변환
+		Integer[] integerArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+		List<Integer> list = Arrays.asList(integerArray); // Arrays.asList: 배열로부터 List 인터페이스 객체 생성
+
+		// 2. streamAPI 활용: 짝수 필터링
+		List<Integer> evenList = list.stream().filter(value -> value % 2 == 0).collect(Collector.toList());
+
+		// 짝수 리스트를 콘솔에 출력
+		evenList.stream().forEach(value -> System.out.println(value));
+
+		// 짝수 리스트를 문자열로 변환
+		String evenListStr = evenList.stream().map(String::valueOf).collect(Collectors.joining("<br>")); 
+		
+		String msg = "ex90_streamAPI를 활용한 리스트의 짝수 필터링 결과:<br>" + evenListStr;
+		System.out.println(msg);
+		return msg;
+	}
+
+	// 3-3-5 ===========================================
+//	Integer[] integerArray = new Integer[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+//	List<Integer> list = Arrays.asList(integerArray);	
+//	List<Integer> evenList = list.stream().filter(value -> value % 2 == 0).collect(Collectors.toList());
+//	evenList.stream.forEach(value -> System.out.println(value));
+//	
 
 }

@@ -97,4 +97,10 @@ public class Mycontroller {
 		return myService.ex89_streamAPI();
 	}
 	
+	@GetMapping("/ex90_streamAPI")
+	public String ex90_streamAPI() {
+		System.out.println("====== ex90_streamAPI ======");
+		return myService.ex90_streamAPI();
+	}
+	
 }
