@@ -261,21 +261,24 @@ public class MyService {
 		// Arrays.asList: 배열로부터 List 인터페이스 객체 생성
 		// 제네릭스<> 사용 >> 리스트의 타입 설정 >> String 들어가면 오류
 		List<Integer> list = Arrays.asList(integerArray);
-		List<Integer> evenList = new ArrayList<Integer>();
+		List<Integer> evenList = new ArrayList<Integer>();		
 
 		// 2. 스트림 API 활용: 짝수 필터링
 		for (int i = 0; i < list.size(); i++) {
 			Integer number = list.get(i);
 			if (number % 2 == 0) { // 2로 나눴을 때의 나머지가 0이면 2의 배수이다.
-				evenList.add(number);
-			}	
+				evenList.add(number);				
+			}
 		}		
 
-		for (int i = 0; i < evenList.size(); i++) {
-			System.out.println(evenList.get(i));
-		}
+		// 스트림 API를 사용하지 않은 짝수 필터링 >> for문
+//		for (int i = 0; i < evenList.size(); i++) {
+//			System.out.println(evenList.get(i));
+//		}
 
-		return null;
+		String msg = "ex89_streamAPI-리스트의 짝수 필터링 결과: " + evenList;
+		System.out.println(msg);
+		return msg;
 	}
 
 }
