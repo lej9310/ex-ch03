@@ -28,7 +28,7 @@ public class MyService {
 		return msg;
 	}
 
-	// 3-2-1 ===========================================
+	// 3-2-1. 조건문 if else ===========================================
 //	public String ex70_str() {
 //		String result = "";
 //		int num = 2;
@@ -63,7 +63,7 @@ public class MyService {
 		return 999;
 	}
 
-	// 3-2-2 ===========================================
+	// 3-2-2. for문 ===========================================
 	public String ex72_for() {
 		int[] array = { 1, 2, 3, 4, 5 };
 		String result = "";
@@ -80,7 +80,7 @@ public class MyService {
 		return msg;
 	}
 
-	// 3-2-3 ===========================================
+	// 3-2-3. while문 ===========================================
 	public String ex73_while() {
 
 		int[] array = { 1, 2, 3, 4, 5 };
@@ -103,7 +103,7 @@ public class MyService {
 		return msg;
 	}
 
-	// 3-2-4 ===========================================
+	// 3-2-4. 다형성 ===========================================
 	public interface Car {
 		public String getColor();
 	}
@@ -140,8 +140,7 @@ public class MyService {
 		return msg;
 	}
 
-	// 3-2-5 ===========================================
-	// Java List 컬렉션
+	// 3-2-5. List 컬렉션 ===========================================
 	public String ex76_ArrList() {
 		// ArrayList<Integer>: ArrayList에 Integer 타입 저장
 		ArrayList<Integer> list = new ArrayList<Integer>();
@@ -157,7 +156,7 @@ public class MyService {
 		return msg;
 	}
 
-	// 3-2-6 ===========================================
+	// 3-2-6. ArrayList 출력 ===========================================
 	public String ex78_ArrList() {
 
 		// ArrayList<String>: ArrayList에 String 타입 저장
@@ -182,7 +181,7 @@ public class MyService {
 		return msg;
 	}
 
-	// 3-2-7 & 3-2-8 ===========================================
+	// 3-2-7. 동일성 & 3-2-8 동등성 ===========================================
 	public String ex79_iden_equal() {
 
 		boolean result1;
@@ -206,8 +205,7 @@ public class MyService {
 		return msg1 + "<br>" + msg2;
 	}
 
-	// 3-3-1 ===========================================
-
+	// 3-3-1. 익명 클래스/람다표현식 ===========================================
 	public String ex85_lambda() {
 		List<String> list = new ArrayList<String>();
 
@@ -217,23 +215,23 @@ public class MyService {
 
 		// 1. 익명 클래스 코드
 		// list.sort() 메소드: 리스트 요소를 정렬
-//		list.sort(new Comparator<String>() {
-//			@Override
-//			public int compare(String str1, String str2) {
-//				return str1.compareTo(str2);
-//			}
-//		});
+		list.sort(new Comparator<String>() {
+			@Override
+			public int compare(String str1, String str2) {
+				return str1.compareTo(str2);
+			}
+		});
 
 		// 2. 람다 표현식 코드
-		// list.sort((str1, str2) -> str1.compareTo(str2));
-		list.sort(Comparator.naturalOrder());
+		list.sort((str1, str2) -> str1.compareTo(str2));
+		// list.sort(Comparator.naturalOrder());
 
 		String msg = "ex85_lambda 결과: " + list;
 		System.out.println(msg);
 		return msg;
 	}
 
-	// 3-3-2 ===========================================
+	// 3-3-2. 스트림 API ===========================================
 	public String ex88_streamAPI() {
 		List<String> list = new ArrayList<String>();
 
@@ -256,7 +254,7 @@ public class MyService {
 		return msg;
 	}
 
-	// 3-3-3 ===========================================
+	// 3-3-3. list for문 ===========================================
 	public String ex89_streamAPI() {
 		// 1. Integer 배열 생성 및 List 변환
 		Integer[] integerArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
@@ -280,12 +278,12 @@ public class MyService {
 			System.out.println(evenList.get(i));
 		}
 
-		String msg = "ex89_for문을 활용한 리스트의 짝수 필터링 결과:<br>" + result;
+		String msg = "ex89_for문을 활용한 리스트 짝수값 필터링 결과:<br>" + result;
 		System.out.println(msg);
 		return msg;
 	}
 
-	// 3-3-4 ===========================================
+	// 3-3-4. streamAPI - filter() ===========================================
 	public String ex90_streamAPI() {
 		// 1. Integer 배열 생성 및 List 변환
 		Integer[] integerArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
@@ -301,12 +299,12 @@ public class MyService {
 		// 짝수 리스트를 문자열로 변환
 		String evenListStr = evenList.stream().map(String::valueOf).collect(Collectors.joining("<br>"));
 
-		String msg = "ex90_streamAPI를 활용한 리스트의 짝수 필터링 결과:<br>" + evenListStr;
+		String msg = "ex90_streamAPI - filter()를 활용한 리스트 짝수값 필터링 결과:<br>" + evenListStr;
 		System.out.println(msg);
 		return msg;
 	}
 
-	// 3-3-5 ===========================================
+	// 3-3-5. streamAPI - forEach() ===========================================
 	public String ex91_streamAPI() {
 		// 1. Integer 배열 생성 및 List 변환
 		Integer[] integerArray = new Integer[] { 1, 2, 3, 4, 5 };
@@ -319,12 +317,12 @@ public class MyService {
 		// 3. 리스트 값을 문자열로 변환
 		String listStr = list.stream().map(String::valueOf).collect(Collectors.joining("<br>"));
 
-		String msg = "ex91_streamAPI 리스트 값 출력 결과:<br>" + listStr;
+		String msg = "ex91_streamAPI - forEach()를 활용한 리스트값 출력 결과:<br>" + listStr;
 		System.out.println(msg);
 		return msg;
 	}
 
-	// 3-3-7 ===========================================
+	// 3-3-7. streamAPI - distinct() ===========================================
 	public String ex00_streamAPI() {
 		// 1. Integer 배열 생성 및 List 변환
 		Integer[] integerArray = new Integer[] { 1, 1, 1, 1, 2, 2, 2, 3, 3, 4 };
@@ -340,12 +338,13 @@ public class MyService {
 		// 4. 중복 제거된 리스트를 문자열로 변환
 		String distinctListStr = distinctList.stream().map(String::valueOf).collect(Collectors.joining("<br>"));
 
-		String msg = "ex00_streamAPI - 리스트 값 중복 제거 결과:<br>" + distinctListStr;
+		String msg = "ex00_streamAPI - distinct()를 활용한 리스트 중복값 제거 결과:<br>" + distinctListStr;
 		System.out.println(msg);
 		return msg;
 	}
 
-	// 3-3-8 ===========================================
+	// 3-3-8. streamAPI -map() ===========================================
+	// 스트림의 각 요소에 대해 함수를 적용하여 새로운 스트림 생성 >> 요소 변환/형 변환
 	public String ex00_338() {
 		// 1. 소문자 문자열 배열 생성
 		String[] lowercaseArray = new String[] { "public", "static", "void" };
@@ -368,7 +367,7 @@ public class MyService {
 		return msg;
 	}
 
-	// 3-3-9 ===========================================
+	// 3-3-9. ===========================================
 	public String ex00_339() {
 		// 1. 문자열을 가져오기 (null이 될 수 있음)
 		String isThisNull = getSomeString();
@@ -391,8 +390,15 @@ public class MyService {
 
 	// getSomeString() 예제 구현 메소드 생성
 	private String getSomeString() {
+		// 1. 항상 null을 반환
+		// return null;
+
+		// 2. 특정 문자열 반환 
 		String str = "문자열이 null이 아닐 경우만 변환합니다.";
 		return str;
 	}
 
+	// 3-3-11. ===========================================
+	// 3-3-13 안티패턴 ===========================================	
+	// 3-3-14. 안티 패턴 해결 ===========================================
 }
