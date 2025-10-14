@@ -93,14 +93,39 @@ public class Mycontroller {
 
 	@GetMapping("/ex89_streamAPI")
 	public String ex89_streamAPI() {
-		System.out.println("====== ex89_streamAPI ======");
+		System.out.println("====== ex89_streamAPI : for문 사용 ======");
 		return myService.ex89_streamAPI();
 	}
 	
 	@GetMapping("/ex90_streamAPI")
 	public String ex90_streamAPI() {
-		System.out.println("====== ex90_streamAPI ======");
+		System.out.println("====== ex90_streamAPI : evenList======");
 		return myService.ex90_streamAPI();
 	}
+	
+	@GetMapping("/ex91_streamAPI")
+	public String ex91_streamAPI() {
+		System.out.println("====== ex91_streamAPI ======");
+		return myService.ex91_streamAPI();
+	}
+	
+	@GetMapping("/ex00_streamAPI")
+	public String ex00_streamAPI() {
+		System.out.println("====== ex00_streamAPI: distinctList ======");
+		return myService.ex00_streamAPI();
+	}
+	
+	@GetMapping("/ex00_338")
+	public String ex00_338() {
+		System.out.println("====== ex00_ ======");
+		return myService.ex00_338();
+	}
+	
+	@GetMapping("/ex00_339")
+	public String ex00_339() {
+		System.out.println("====== ex00_ ======");
+		return myService.ex00_339();
+	}
+	
 	
 }

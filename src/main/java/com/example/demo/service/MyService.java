@@ -246,7 +246,8 @@ public class MyService {
 
 		// 리스트 각 요소를 콘솔에 출력
 		// list.stream().forEach(str -> System.out.println(str));
-		list.stream().forEach(System.out::println);
+		// list.stream().forEach(System.out::println);
+		list.stream().forEach(str -> Log.info("{}", str));
 
 		String result = list.stream().collect(Collectors.joining("<br>"));
 
@@ -291,24 +292,107 @@ public class MyService {
 		List<Integer> list = Arrays.asList(integerArray); // Arrays.asList: 배열로부터 List 인터페이스 객체 생성
 
 		// 2. streamAPI 활용: 짝수 필터링
-		List<Integer> evenList = list.stream().filter(value -> value % 2 == 0).collect(Collector.toList());
+		List<Integer> evenList = list.stream().filter(value -> value % 2 == 0).collect(Collectors.toList());
 
 		// 짝수 리스트를 콘솔에 출력
-		evenList.stream().forEach(value -> System.out.println(value));
+		// evenList.stream().forEach(value -> System.out.println(value));
+		evenList.stream().forEach(value -> Log.info("{}", value));
 
 		// 짝수 리스트를 문자열로 변환
-		String evenListStr = evenList.stream().map(String::valueOf).collect(Collectors.joining("<br>")); 
-		
+		String evenListStr = evenList.stream().map(String::valueOf).collect(Collectors.joining("<br>"));
+
 		String msg = "ex90_streamAPI를 활용한 리스트의 짝수 필터링 결과:<br>" + evenListStr;
 		System.out.println(msg);
 		return msg;
 	}
 
 	// 3-3-5 ===========================================
-//	Integer[] integerArray = new Integer[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-//	List<Integer> list = Arrays.asList(integerArray);	
-//	List<Integer> evenList = list.stream().filter(value -> value % 2 == 0).collect(Collectors.toList());
-//	evenList.stream.forEach(value -> System.out.println(value));
-//	
+	public String ex91_streamAPI() {
+		// 1. Integer 배열 생성 및 List 변환
+		Integer[] integerArray = new Integer[] { 1, 2, 3, 4, 5 };
+		List<Integer> list = Arrays.asList(integerArray);
+
+		// 2. 리스트 내 모든 값 콘솔에 출력
+		// list.stream().forEach(value -> System.out.println(value));
+		list.stream().forEach(value -> Log.info("{}", value));
+
+		// 3. 리스트 값을 문자열로 변환
+		String listStr = list.stream().map(String::valueOf).collect(Collectors.joining("<br>"));
+
+		String msg = "ex91_streamAPI 리스트 값 출력 결과:<br>" + listStr;
+		System.out.println(msg);
+		return msg;
+	}
+
+	// 3-3-7 ===========================================
+	public String ex00_streamAPI() {
+		// 1. Integer 배열 생성 및 List 변환
+		Integer[] integerArray = new Integer[] { 1, 1, 1, 1, 2, 2, 2, 3, 3, 4 };
+		List<Integer> list = Arrays.asList(integerArray);
+
+		// 2. 중복을 제거(distinct)한 리스트 생성
+		List<Integer> distinctList = list.stream().distinct().collect(Collectors.toList());
+
+		// 3. 중복 제거된 리스트의 요소 콘솔에 출력
+		// distinctList.stream().forEach(value -> System.out.println(value));
+		distinctList.stream().forEach(value -> Log.info("{}", value));
+
+		// 4. 중복 제거된 리스트를 문자열로 변환
+		String distinctListStr = distinctList.stream().map(String::valueOf).collect(Collectors.joining("<br>"));
+
+		String msg = "ex00_streamAPI - 리스트 값 중복 제거 결과:<br>" + distinctListStr;
+		System.out.println(msg);
+		return msg;
+	}
+
+	// 3-3-8 ===========================================
+	public String ex00_338() {
+		// 1. 소문자 문자열 배열 생성
+		String[] lowercaseArray = new String[] { "public", "static", "void" };
+
+		// 2. list로 변환
+		List<String> lowercaseList = Arrays.asList(lowercaseArray);
+		// 3. 모든 요소를 대문자로 변환한 list 생성
+		List<String> uppercaseList = lowercaseList.stream().map(value -> value.toUpperCase())
+				.collect(Collectors.toList());
+
+		// 4. 대문자 변환 리스트 로그 출력
+		uppercaseList.stream().forEach(value -> Log.info("{}", value));
+
+		// 5. 각 리스트의 요소들을 문자열로 변환
+		String lowercaseListStr = lowercaseList.stream().collect(Collectors.joining("<br>"));
+		String uppercaseListStr = uppercaseList.stream().collect(Collectors.joining("<br>"));
+
+		String msg = "ex00_338 결과:<br>=== 소문자 ===<br>" + lowercaseListStr + "<br>=== 대문자 ===<br>" + uppercaseListStr;
+		System.out.println(msg);
+		return msg;
+	}
+
+	// 3-3-9 ===========================================
+	public String ex00_339() {
+		// 1. 문자열을 가져오기 (null이 될 수 있음)
+		String isThisNull = getSomeString();
+
+		String result = null;
+
+		// 2. 문자열이 null이 아닐 때만 변환
+		if (null != isThisNull) {
+			result = isThisNull.toUpperCase();
+			Log.info("변환 결과: {}", result);
+		} else {
+			result = "null";
+			Log.info("처리가 불가능한 null 문자열입니다.");
+		}
+
+		String msg = "ex00_339 결과: " + result;
+		System.out.println(msg);
+		return msg;
+	}
+
+	// getSomeString() 예제 구현 메소드 생성
+	private String getSomeString() {
+		String str = "문자열이 null이 아닐 경우만 변환합니다.";
+		return str;
+	}
 
 }

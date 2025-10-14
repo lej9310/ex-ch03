@@ -26,7 +26,7 @@ public class Ch03Application {
 	@Bean
 	public CommandLineRunner run() {
 		return args -> {
-			Log.info("================");	
+			Log.info("================");
 			Log.info("정보 수준");     // 일반적인 진행 상황이나 상태 정보 기록
 			Log.debug("디버그 수준");   // 디버깅을 위한 상세 정보 기록
 			Log.warn("경고 수준");     // 잠재적 문제나 비정상적 상태
