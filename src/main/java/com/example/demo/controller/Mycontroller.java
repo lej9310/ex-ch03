@@ -149,6 +149,12 @@ public class Mycontroller {
 	}
 	
 	// 3-3-13.
+	@GetMapping("/ex97_optional")
+	public String ex97_optional() {
+		System.out.println("====== ex97_비어 있는 optional 반환 ======");
+		return myService.ex97_optional();
+	}
+	
 	// 3-3-14.
 	
 	

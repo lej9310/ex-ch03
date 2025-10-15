@@ -402,9 +402,10 @@ public class MyService {
 	// 3-3-11. java 비어 있는 optional 반환 ===========================================
 	// optional: if문으로 null을 체크하는 코드 개선 가능
 	public String ex95_optional() {
-		
-		Optional<String> isThisNull = getSomeString2();		
-		isThisNull.ifPresent(str -> Log.info("{}", str));
+
+		// Optional이 값이 있을 때 로그 출력
+		Optional<String> isThisNull = getSomeString2();
+		isThisNull.ifPresent(str -> Log.info("반환 결과: {}", str)); // 값이 존재하지 않기 때문에 람다함수 실행X
 
 		String msg = "ex95_optional 결과: " + isThisNull;
 		System.out.println(msg);
@@ -416,5 +417,24 @@ public class MyService {
 	}
 
 	// 3-3-13. 안티패턴 ===========================================
+	public String ex97_optional() {
+		Optional<String> str = getSomeString3();
+		
+		Optional<Object> result = str.map(s -> s.toUpperCase());
+		
+		if (str.isPresent()) {			
+			Log.info("{}", result);
+		}
+		
+		String msg = "ex97_optional 결과: " + result;
+		System.out.println(msg);
+		return msg;
+	}
+
+	private static Optional<String> getSomeString3() {
+		return Optional.ofNullable("public static void");
+	}
+
 	// 3-3-14. 안티 패턴 해결 ===========================================
+
 }
