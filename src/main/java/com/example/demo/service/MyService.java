@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
@@ -231,7 +232,7 @@ public class MyService {
 		return msg;
 	}
 
-	// 3-3-2. 스트림 API ===========================================
+	// 3-3-2. java 스트림 API ===========================================
 	public String ex88_streamAPI() {
 		List<String> list = new ArrayList<String>();
 
@@ -254,8 +255,8 @@ public class MyService {
 		return msg;
 	}
 
-	// 3-3-3. list for문 ===========================================
-	public String ex89_streamAPI() {
+	// 3-3-3. java for문 ===========================================
+	public String ex89_for() {
 		// 1. Integer 배열 생성 및 List 변환
 		Integer[] integerArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 		List<Integer> list = Arrays.asList(integerArray); // Arrays.asList: 배열로부터 List 인터페이스 객체 생성
@@ -283,8 +284,8 @@ public class MyService {
 		return msg;
 	}
 
-	// 3-3-4. streamAPI - filter() ===========================================
-	public String ex90_streamAPI() {
+	// 3-3-4. java streamAPI - filter() ===========================================
+	public String ex90_filter() {
 		// 1. Integer 배열 생성 및 List 변환
 		Integer[] integerArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 		List<Integer> list = Arrays.asList(integerArray); // Arrays.asList: 배열로부터 List 인터페이스 객체 생성
@@ -304,8 +305,8 @@ public class MyService {
 		return msg;
 	}
 
-	// 3-3-5. streamAPI - forEach() ===========================================
-	public String ex91_streamAPI() {
+	// 3-3-5. java forEach() ===========================================
+	public String ex91_forEach() {
 		// 1. Integer 배열 생성 및 List 변환
 		Integer[] integerArray = new Integer[] { 1, 2, 3, 4, 5 };
 		List<Integer> list = Arrays.asList(integerArray);
@@ -323,7 +324,7 @@ public class MyService {
 	}
 
 	// 3-3-7. streamAPI - distinct() ===========================================
-	public String ex00_streamAPI() {
+	public String ex93_distinct() {
 		// 1. Integer 배열 생성 및 List 변환
 		Integer[] integerArray = new Integer[] { 1, 1, 1, 1, 2, 2, 2, 3, 3, 4 };
 		List<Integer> list = Arrays.asList(integerArray);
@@ -338,14 +339,14 @@ public class MyService {
 		// 4. 중복 제거된 리스트를 문자열로 변환
 		String distinctListStr = distinctList.stream().map(String::valueOf).collect(Collectors.joining("<br>"));
 
-		String msg = "ex00_streamAPI - distinct()를 활용한 리스트 중복값 제거 결과:<br>" + distinctListStr;
+		String msg = "ex93_streamAPI - distinct()를 활용한 리스트 중복값 제거 결과:<br>" + distinctListStr;
 		System.out.println(msg);
 		return msg;
 	}
 
-	// 3-3-8. streamAPI -map() ===========================================
+	// 3-3-8. streamAPI - java map() ===========================================
 	// 스트림의 각 요소에 대해 함수를 적용하여 새로운 스트림 생성 >> 요소 변환/형 변환
-	public String ex00_338() {
+	public String ex93_map() {
 		// 1. 소문자 문자열 배열 생성
 		String[] lowercaseArray = new String[] { "public", "static", "void" };
 
@@ -362,13 +363,13 @@ public class MyService {
 		String lowercaseListStr = lowercaseList.stream().collect(Collectors.joining("<br>"));
 		String uppercaseListStr = uppercaseList.stream().collect(Collectors.joining("<br>"));
 
-		String msg = "ex00_338 결과:<br>=== 소문자 ===<br>" + lowercaseListStr + "<br>=== 대문자 ===<br>" + uppercaseListStr;
+		String msg = "ex93_map 결과:<br>=== 소문자 ===<br>" + lowercaseListStr + "<br>=== 대문자 ===<br>" + uppercaseListStr;
 		System.out.println(msg);
 		return msg;
 	}
 
 	// 3-3-9. ===========================================
-	public String ex00_339() {
+	public String ex94_null() {
 		// 1. 문자열을 가져오기 (null이 될 수 있음)
 		String isThisNull = getSomeString();
 
@@ -383,7 +384,7 @@ public class MyService {
 			Log.info("처리가 불가능한 null 문자열입니다.");
 		}
 
-		String msg = "ex00_339 결과: " + result;
+		String msg = "ex94_null 결과: " + result;
 		System.out.println(msg);
 		return msg;
 	}
@@ -393,12 +394,27 @@ public class MyService {
 		// 1. 항상 null을 반환
 		// return null;
 
-		// 2. 특정 문자열 반환 
+		// 2. 특정 문자열 반환
 		String str = "문자열이 null이 아닐 경우만 변환합니다.";
 		return str;
 	}
 
-	// 3-3-11. ===========================================
-	// 3-3-13 안티패턴 ===========================================	
+	// 3-3-11. java 비어 있는 optional 반환 ===========================================
+	// optional: if문으로 null을 체크하는 코드 개선 가능
+	public String ex95_optional() {
+		
+		Optional<String> isThisNull = getSomeString2();		
+		isThisNull.ifPresent(str -> Log.info("{}", str));
+
+		String msg = "ex95_optional 결과: " + isThisNull;
+		System.out.println(msg);
+		return msg;
+	}
+
+	private static Optional<String> getSomeString2() {
+		return Optional.empty(); // null을 반환하는 것이 아니라, 비어 있는 Optional을 반환
+	}
+
+	// 3-3-13. 안티패턴 ===========================================
 	// 3-3-14. 안티 패턴 해결 ===========================================
 }
