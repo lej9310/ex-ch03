@@ -416,16 +416,21 @@ public class MyService {
 		return Optional.empty(); // null을 반환하는 것이 아니라, 비어 있는 Optional을 반환
 	}
 
-	// 3-3-13. 안티패턴 ===========================================
+	// 3-3-13. 안티패턴 & 3-3-14. 안티패턴 해결 ===========================================
+	// 비효율적이거나 생산적이지 않은 패턴
 	public String ex97_optional() {
 		Optional<String> str = getSomeString3();
-		
-		Optional<Object> result = str.map(s -> s.toUpperCase());
-		
-		if (str.isPresent()) {			
-			Log.info("{}", result);
-		}
-		
+
+		Optional<Object> result = null;
+
+		// 3-3-13. isPresent() 메서드를 마치 if문처럼 잘못 사용
+		// if (str.isPresent()) {
+		// Log.info("{}", result);
+		// }
+
+		// 3-3-14. 안티 패턴 해결
+		str.ifPresent((String) -> Log.info(String.toUpperCase()));
+
 		String msg = "ex97_optional 결과: " + result;
 		System.out.println(msg);
 		return msg;
@@ -434,7 +439,5 @@ public class MyService {
 	private static Optional<String> getSomeString3() {
 		return Optional.ofNullable("public static void");
 	}
-
-	// 3-3-14. 안티 패턴 해결 ===========================================
 
 }
