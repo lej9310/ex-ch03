@@ -1,4 +1,4 @@
-package com.example.calculator.dto;
+package com.example.demo.calculator.dto;
 
 public class CalculationRequest {
 	

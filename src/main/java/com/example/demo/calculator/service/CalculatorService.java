@@ -1,4 +1,4 @@
-package com.example.calculator.service;
+package com.example.demo.calculator.service;
 
 import org.springframework.stereotype.Service;
 

@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.calculator.dto.CalculationRequest;
-import com.example.calculator.dto.CalculatorResponse;
-import com.example.calculator.service.CalculatorService;
+import com.example.demo.calculator.dto.CalculationRequest;
+import com.example.demo.calculator.dto.CalculatorResponse;
+import com.example.demo.calculator.service.CalculatorService;
 
 @RestController
-@RequestMapping("Calculator") // 웹 요청을 처리해야 할 URL 패턴을 지정
+@RequestMapping("calculator") // 웹 요청을 처리해야 할 URL 패턴을 지정
 public class CalculatorController {
 
 	// 의존성 주입 예제
