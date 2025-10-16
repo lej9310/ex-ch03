@@ -6,15 +6,17 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@ComponentScan(basePackages = { "com.example.demo", "com.lej.calculator2" })
 public class Ch03Application {
 
 	// 1. Logger 객체 생성
 	// SLF4J(Simple Logging Facade for Java) 프레임워크의 LoggerFactory 이용
 	private static final Logger Log = LoggerFactory.getLogger(Ch03Application.class);
 
-	// 2. 메인 메소드:  Spring Boot 애플리케이션 실행
+	// 2. 메인 메소드: Spring Boot 애플리케이션 실행
 	public static void main(String[] args) {
 		SpringApplication.run(Ch03Application.class, args);
 	}
@@ -27,10 +29,10 @@ public class Ch03Application {
 	public CommandLineRunner run() {
 		return args -> {
 			Log.info("================");
-			Log.info("정보 수준");     // 일반적인 진행 상황이나 상태 정보 기록
-			Log.debug("디버그 수준");   // 디버깅을 위한 상세 정보 기록
-			Log.warn("경고 수준");     // 잠재적 문제나 비정상적 상태
-			Log.error("에러 수준");    // 예외 발생하거나 심각한 오류
+			Log.info("정보 수준"); // 일반적인 진행 상황이나 상태 정보 기록
+			Log.debug("디버그 수준"); // 디버깅을 위한 상세 정보 기록
+			Log.warn("경고 수준"); // 잠재적 문제나 비정상적 상태
+			Log.error("에러 수준"); // 예외 발생하거나 심각한 오류
 			Log.info("================");
 		};
 	}
