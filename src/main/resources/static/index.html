@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h3>get 방식</h3>
+	<form action="./article-get" method="get">
+		<input type="text" name="title">
+		<input type="text" name="content">
+		<input type="submit">
+
+	</form>
+
+	<h3>post 방식</h3>
+	<form action="./article-post" method="post">
+		<input type="text" name="title">
+		<input type="text" name="content">
+		<input type="submit">
+	</form>
+
+	<h3>postman 방식</h3>
+	<p>화면 말고, Postman으로 테스트하세요. "./article_postman"</p>
+	<p>POST: http://localhost:8080/article-postman</p>
+	<p>Settings: Body - raw - JSON</p>
+	<img src="./img/postman.png" alt="postman 방식">
+
+	<h3>post 방식 - auto</h3>
+	<form action="./article-auto" method="post">
+		<input type="text" name="title">
+		<input type="text" name="content">
+		<input type="submit">
+		<img src="./img/postman2.png" alt="postman 방식">
+	</form>
+
+</body>
+
+</html>
