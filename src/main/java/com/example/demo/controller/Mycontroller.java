@@ -8,7 +8,7 @@ import com.example.demo.service.MyService;
 @RestController
 public class Mycontroller {
 
-	// 자바 방식 - 객체 생성
+	// 자바 방식 - new 연산자를 사용한 객체 생성
 	// MyService myService = new MyService;
 
 	private final MyService myService;
@@ -153,9 +153,7 @@ public class Mycontroller {
 	public String ex97_optional() {
 		System.out.println("====== ex97_안티패턴 & 안티패턴 해결 ======");
 		return myService.ex97_optional();
-	}
-	
-	// 
+	}	
 	
 	
 }

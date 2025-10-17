@@ -399,7 +399,9 @@ public class MyService {
 	}
 
 	// 3-3-11. java 비어 있는 optional 반환 ===========================================
-	// optional: if문으로 null을 체크하는 코드 개선 가능
+	// optional: null을 직접 반환하는 대신, 값이 있을 때와 없을 때에 대한 처리
+	// null 포인터 예외(NullPointer Exception) 방지
+
 	public String ex95_optional() {
 
 		// Optional이 값이 있을 때 로그 출력
@@ -416,21 +418,22 @@ public class MyService {
 	}
 
 	// 3-3-13. 안티패턴 & 3-3-14. 안티패턴 해결 ===========================================
-	// 비효율적이거나 생산적이지 않은 패턴
+	// 안티패턴: 비효율적이거나 생산적이지 않은 패턴
 	public String ex97_optional() {
 		Optional<String> str = getSomeString3();
 
-		Optional<Object> result = null;
+		// String이 존재하면 대문자로 변환 후 Optional에 저장
+		Optional<String> result = str.map(String::toUpperCase);
 
-		// 3-3-13. isPresent() 메서드를 마치 if문처럼 잘못 사용
+		// 3-3-13. isPresent() 메서드를 if문처럼 잘못 사용
 		// if (str.isPresent()) {
 		// Log.info("{}", result);
 		// }
 
-		// 3-3-14. 안티 패턴 해결
-		str.ifPresent((String) -> Log.info(String.toUpperCase()));
+		// 3-3-14. 안티 패턴 해결 >> 결과값이 있을 경우, 콘솔에 출력
+		result.ifPresent(s -> Log.info(s));
 
-		String msg = "ex97_optional 결과: " + result;
+		String msg = "ex97_optional 결과: " + result.orElse("값이 없습니다.");
 		System.out.println(msg);
 		return msg;
 	}
