@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan(basePackages = { "com.example.demo", "com.lej.calculator2", "com.lej.myForm", "com.lej.tymleaf",
-		"com.lej.ch05" })
+		"com.lej.ch05", "com.lej.ch06" })
 public class Ch03Application {
 
 	// 1. Logger 객체 생성
