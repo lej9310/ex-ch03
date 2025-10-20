@@ -17,10 +17,9 @@ public class StudentService {
 
 	private final StudentMapper studentMapper;
 
-
 	public List<Student> getAllStudents() {
 		return studentMapper.findAll();
-		
+
 		// DB연결전에 테스트 ===========================
 		// List<Student> students = new ArrayList<>();
 		// students.add(new Student() {{setId(1L); setName("홍길동");}});

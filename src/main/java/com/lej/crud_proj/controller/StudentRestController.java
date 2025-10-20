@@ -13,7 +13,7 @@ import lombok.RequiredArgsConstructor;
 
 //@RequiredArgsConstructor:final 또는 @NonNull 필드를 대상으로 생성자를 자동으로 생성
 @RestController
-@RequestMapping("api/students")
+@RequestMapping("/api/students")
 @RequiredArgsConstructor
 public class StudentRestController {
 

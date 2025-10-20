@@ -727,3 +727,321 @@ Caused by: java.lang.IllegalStateException: Cannot load driver class: org.mariad
 2025-10-20T17:08:03.579+09:00  INFO 3820 --- [ex-ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2025-10-20T17:08:03.579+09:00  INFO 3820 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2025-10-20T17:08:03.580+09:00  INFO 3820 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-20T17:12:10.547+09:00  INFO 3820 --- [ex-ch03] [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-20T17:12:10.549+09:00  INFO 3820 --- [ex-ch03] [RMI TCP Connection(12)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-20T17:12:10.552+09:00  INFO 3820 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-20T17:12:11.808+09:00  INFO 16036 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 16036 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-20T17:12:11.809+09:00  INFO 16036 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-20T17:12:11.832+09:00  INFO 16036 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-20T17:12:11.833+09:00  INFO 16036 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-20T17:12:12.202+09:00  WARN 16036 --- [ex-ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-20T17:12:12.400+09:00  INFO 16036 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-20T17:12:12.408+09:00  INFO 16036 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-20T17:12:12.408+09:00  INFO 16036 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-20T17:12:12.433+09:00  INFO 16036 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-20T17:12:12.433+09:00  INFO 16036 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 600 ms
+2025-10-20T17:12:12.495+09:00  INFO 16036 --- [ex-ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-20T17:12:12.777+09:00  INFO 16036 --- [ex-ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-20T17:12:12.799+09:00  INFO 16036 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-20T17:12:12.804+09:00  INFO 16036 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Started Ch03Application in 1.234 seconds (process running for 1.62)
+2025-10-20T17:12:12.806+09:00  INFO 16036 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : ================
+2025-10-20T17:12:12.806+09:00  INFO 16036 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 정보 수준
+2025-10-20T17:12:12.806+09:00  WARN 16036 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 경고 수준
+2025-10-20T17:12:12.807+09:00 ERROR 16036 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 에러 수준
+2025-10-20T17:12:12.807+09:00  INFO 16036 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : ================
+2025-10-20T17:12:15.533+09:00  INFO 16036 --- [ex-ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-20T17:12:15.533+09:00  INFO 16036 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-20T17:12:15.534+09:00  INFO 16036 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-20T17:12:15.551+09:00  INFO 16036 --- [ex-ch03] [http-nio-8090-exec-1] com.example.demo.service.MyService       : 안녕, 좋은 하루~!
+2025-10-20T17:14:50.080+09:00  INFO 16036 --- [ex-ch03] [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-20T17:14:50.082+09:00  INFO 16036 --- [ex-ch03] [RMI TCP Connection(12)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-20T17:14:50.085+09:00  INFO 16036 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-20T17:14:51.307+09:00  INFO 1720 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 1720 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-20T17:14:51.308+09:00  INFO 1720 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-20T17:14:51.332+09:00  INFO 1720 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-20T17:14:51.332+09:00  INFO 1720 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-20T17:14:51.707+09:00  WARN 1720 --- [ex-ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-20T17:14:51.903+09:00  INFO 1720 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-20T17:14:51.911+09:00  INFO 1720 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-20T17:14:51.911+09:00  INFO 1720 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-20T17:14:51.936+09:00  INFO 1720 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-20T17:14:51.936+09:00  INFO 1720 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 604 ms
+2025-10-20T17:14:51.999+09:00  INFO 1720 --- [ex-ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-20T17:14:52.278+09:00  INFO 1720 --- [ex-ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-20T17:14:52.300+09:00  INFO 1720 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-20T17:14:52.305+09:00  INFO 1720 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Started Ch03Application in 1.233 seconds (process running for 1.618)
+2025-10-20T17:14:52.307+09:00  INFO 1720 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : ================
+2025-10-20T17:14:52.307+09:00  INFO 1720 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 정보 수준
+2025-10-20T17:14:52.307+09:00  WARN 1720 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 경고 수준
+2025-10-20T17:14:52.307+09:00 ERROR 1720 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 에러 수준
+2025-10-20T17:14:52.308+09:00  INFO 1720 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : ================
+2025-10-20T17:14:55.769+09:00  INFO 1720 --- [ex-ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-20T17:14:55.769+09:00  INFO 1720 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-20T17:14:55.770+09:00  INFO 1720 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-20T17:14:55.786+09:00  INFO 1720 --- [ex-ch03] [http-nio-8090-exec-1] com.example.demo.service.MyService       : 안녕, 좋은 하루~!
+2025-10-20T17:15:01.488+09:00  INFO 1720 --- [ex-ch03] [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-20T17:15:01.490+09:00  INFO 1720 --- [ex-ch03] [RMI TCP Connection(2)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-20T17:15:01.493+09:00  INFO 1720 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-20T17:15:22.563+09:00  INFO 704 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 704 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-20T17:15:22.565+09:00  INFO 704 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-20T17:15:22.590+09:00  INFO 704 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-20T17:15:22.590+09:00  INFO 704 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-20T17:15:22.963+09:00  WARN 704 --- [ex-ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-20T17:15:23.162+09:00  INFO 704 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-20T17:15:23.171+09:00  INFO 704 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-20T17:15:23.171+09:00  INFO 704 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-20T17:15:23.196+09:00  INFO 704 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-20T17:15:23.196+09:00  INFO 704 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 606 ms
+2025-10-20T17:15:23.263+09:00  INFO 704 --- [ex-ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-20T17:15:23.546+09:00  INFO 704 --- [ex-ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-20T17:15:23.569+09:00  INFO 704 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-20T17:15:23.574+09:00  INFO 704 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Started Ch03Application in 1.254 seconds (process running for 1.671)
+2025-10-20T17:15:23.576+09:00  INFO 704 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : ================
+2025-10-20T17:15:23.576+09:00  INFO 704 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 정보 수준
+2025-10-20T17:15:23.577+09:00  WARN 704 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 경고 수준
+2025-10-20T17:15:23.577+09:00 ERROR 704 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 에러 수준
+2025-10-20T17:15:23.577+09:00  INFO 704 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : ================
+2025-10-20T17:15:25.917+09:00  INFO 704 --- [ex-ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-20T17:15:25.917+09:00  INFO 704 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-20T17:15:25.918+09:00  INFO 704 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-20T17:15:25.934+09:00  INFO 704 --- [ex-ch03] [http-nio-8090-exec-1] com.example.demo.service.MyService       : 안녕, 좋은 하루~!
+2025-10-20T17:18:50.742+09:00  INFO 704 --- [ex-ch03] [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-20T17:18:50.744+09:00  INFO 704 --- [ex-ch03] [RMI TCP Connection(13)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-20T17:18:50.747+09:00  INFO 704 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-20T17:18:52.028+09:00  INFO 9272 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 9272 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-20T17:18:52.030+09:00  INFO 9272 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-20T17:18:52.054+09:00  INFO 9272 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-20T17:18:52.054+09:00  INFO 9272 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-20T17:18:52.427+09:00  WARN 9272 --- [ex-ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-20T17:18:52.623+09:00  INFO 9272 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-20T17:18:52.632+09:00  INFO 9272 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-20T17:18:52.632+09:00  INFO 9272 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-20T17:18:52.657+09:00  INFO 9272 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-20T17:18:52.657+09:00  INFO 9272 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 603 ms
+2025-10-20T17:18:52.720+09:00  INFO 9272 --- [ex-ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-20T17:18:53.003+09:00  INFO 9272 --- [ex-ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-20T17:18:53.025+09:00  INFO 9272 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-20T17:18:53.030+09:00  INFO 9272 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Started Ch03Application in 1.239 seconds (process running for 1.636)
+2025-10-20T17:18:53.032+09:00  INFO 9272 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : ================
+2025-10-20T17:18:53.032+09:00  INFO 9272 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 정보 수준
+2025-10-20T17:18:53.032+09:00  WARN 9272 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 경고 수준
+2025-10-20T17:18:53.032+09:00 ERROR 9272 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 에러 수준
+2025-10-20T17:18:53.032+09:00  INFO 9272 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : ================
+2025-10-20T17:18:54.972+09:00  INFO 9272 --- [ex-ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-20T17:18:54.972+09:00  INFO 9272 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-20T17:18:54.973+09:00  INFO 9272 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-20T17:18:54.989+09:00  INFO 9272 --- [ex-ch03] [http-nio-8090-exec-1] com.example.demo.service.MyService       : 안녕, 좋은 하루~!
+2025-10-20T17:19:17.678+09:00  INFO 9272 --- [ex-ch03] [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-20T17:19:17.681+09:00  INFO 9272 --- [ex-ch03] [RMI TCP Connection(8)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-20T17:19:17.684+09:00  INFO 9272 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-20T17:19:18.900+09:00  INFO 2196 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 2196 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-20T17:19:18.901+09:00  INFO 2196 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-20T17:19:18.924+09:00  INFO 2196 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-20T17:19:18.925+09:00  INFO 2196 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-20T17:19:19.296+09:00  WARN 2196 --- [ex-ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-20T17:19:19.493+09:00  INFO 2196 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-20T17:19:19.501+09:00  INFO 2196 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-20T17:19:19.502+09:00  INFO 2196 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-20T17:19:19.527+09:00  INFO 2196 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-20T17:19:19.527+09:00  INFO 2196 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 602 ms
+2025-10-20T17:19:19.590+09:00  INFO 2196 --- [ex-ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-20T17:19:19.871+09:00  INFO 2196 --- [ex-ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-20T17:19:19.894+09:00  INFO 2196 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-20T17:19:19.899+09:00  INFO 2196 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Started Ch03Application in 1.232 seconds (process running for 1.614)
+2025-10-20T17:19:19.901+09:00  INFO 2196 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : ================
+2025-10-20T17:19:19.901+09:00  INFO 2196 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 정보 수준
+2025-10-20T17:19:19.901+09:00  WARN 2196 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 경고 수준
+2025-10-20T17:19:19.901+09:00 ERROR 2196 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 에러 수준
+2025-10-20T17:19:19.901+09:00  INFO 2196 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : ================
+2025-10-20T17:19:20.904+09:00  INFO 2196 --- [ex-ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-20T17:19:20.904+09:00  INFO 2196 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-20T17:19:20.905+09:00  INFO 2196 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-20T17:19:30.041+09:00  INFO 2196 --- [ex-ch03] [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-20T17:19:30.043+09:00  INFO 2196 --- [ex-ch03] [RMI TCP Connection(7)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-20T17:19:30.046+09:00  INFO 2196 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-20T17:19:31.273+09:00  INFO 3576 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 3576 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-20T17:19:31.274+09:00  INFO 3576 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-20T17:19:31.299+09:00  INFO 3576 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-20T17:19:31.299+09:00  INFO 3576 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-20T17:19:31.675+09:00  WARN 3576 --- [ex-ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-20T17:19:31.875+09:00  INFO 3576 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-20T17:19:31.884+09:00  INFO 3576 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-20T17:19:31.884+09:00  INFO 3576 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-20T17:19:31.909+09:00  INFO 3576 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-20T17:19:31.909+09:00  INFO 3576 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 610 ms
+2025-10-20T17:19:31.972+09:00  INFO 3576 --- [ex-ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-20T17:19:32.254+09:00  INFO 3576 --- [ex-ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-20T17:19:32.277+09:00  INFO 3576 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-20T17:19:32.283+09:00  INFO 3576 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Started Ch03Application in 1.245 seconds (process running for 1.631)
+2025-10-20T17:19:32.284+09:00  INFO 3576 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : ================
+2025-10-20T17:19:32.284+09:00  INFO 3576 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 정보 수준
+2025-10-20T17:19:32.284+09:00  WARN 3576 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 경고 수준
+2025-10-20T17:19:32.285+09:00 ERROR 3576 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 에러 수준
+2025-10-20T17:19:32.285+09:00  INFO 3576 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : ================
+2025-10-20T17:19:34.660+09:00  INFO 3576 --- [ex-ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-20T17:19:34.660+09:00  INFO 3576 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-20T17:19:34.661+09:00  INFO 3576 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-20T17:19:34.677+09:00  INFO 3576 --- [ex-ch03] [http-nio-8090-exec-1] com.example.demo.service.MyService       : 안녕, 좋은 하루~!
+2025-10-20T17:21:07.342+09:00  INFO 3576 --- [ex-ch03] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-10-20T17:21:07.343+09:00  INFO 3576 --- [ex-ch03] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-20T17:21:07.346+09:00  INFO 3576 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-20T17:21:07.419+09:00  INFO 3576 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 3576 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-20T17:21:07.420+09:00  INFO 3576 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-20T17:21:07.530+09:00  WARN 3576 --- [ex-ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-20T17:21:07.558+09:00  INFO 3576 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-20T17:21:07.558+09:00  INFO 3576 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-20T17:21:07.558+09:00  INFO 3576 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-20T17:21:07.569+09:00  INFO 3576 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-20T17:21:07.570+09:00  INFO 3576 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 149 ms
+2025-10-20T17:21:07.588+09:00  INFO 3576 --- [ex-ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-20T17:21:07.646+09:00  INFO 3576 --- [ex-ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-20T17:21:07.653+09:00  INFO 3576 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-20T17:21:07.654+09:00  INFO 3576 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Started Ch03Application in 0.248 seconds (process running for 97.002)
+2025-10-20T17:21:07.655+09:00  INFO 3576 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : ================
+2025-10-20T17:21:07.655+09:00  INFO 3576 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 정보 수준
+2025-10-20T17:21:07.655+09:00  WARN 3576 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 경고 수준
+2025-10-20T17:21:07.655+09:00 ERROR 3576 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 에러 수준
+2025-10-20T17:21:07.655+09:00  INFO 3576 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : ================
+2025-10-20T17:21:07.656+09:00  INFO 3576 --- [ex-ch03] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-20T17:21:11.684+09:00  INFO 3576 --- [ex-ch03] [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-20T17:21:11.684+09:00  INFO 3576 --- [ex-ch03] [RMI TCP Connection(14)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-20T17:21:11.686+09:00  INFO 3576 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-20T17:21:12.892+09:00  INFO 4716 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 4716 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-20T17:21:12.893+09:00  INFO 4716 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-20T17:21:12.916+09:00  INFO 4716 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-20T17:21:12.916+09:00  INFO 4716 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-20T17:21:13.287+09:00  WARN 4716 --- [ex-ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-20T17:21:13.484+09:00  INFO 4716 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-20T17:21:13.494+09:00  INFO 4716 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-20T17:21:13.494+09:00  INFO 4716 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-20T17:21:13.519+09:00  INFO 4716 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-20T17:21:13.520+09:00  INFO 4716 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 604 ms
+2025-10-20T17:21:13.583+09:00  INFO 4716 --- [ex-ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-20T17:21:13.863+09:00  INFO 4716 --- [ex-ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-20T17:21:13.886+09:00  INFO 4716 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-20T17:21:13.891+09:00  INFO 4716 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Started Ch03Application in 1.232 seconds (process running for 1.613)
+2025-10-20T17:21:13.893+09:00  INFO 4716 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : ================
+2025-10-20T17:21:13.893+09:00  INFO 4716 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 정보 수준
+2025-10-20T17:21:13.893+09:00  WARN 4716 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 경고 수준
+2025-10-20T17:21:13.893+09:00 ERROR 4716 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 에러 수준
+2025-10-20T17:21:13.893+09:00  INFO 4716 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : ================
+2025-10-20T17:21:22.694+09:00  INFO 4716 --- [ex-ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-20T17:21:22.694+09:00  INFO 4716 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-20T17:21:22.695+09:00  INFO 4716 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-20T17:21:31.036+09:00  INFO 4716 --- [ex-ch03] [http-nio-8090-exec-2] com.example.demo.service.MyService       : 안녕, 좋은 하루~!
+2025-10-20T17:27:24.451+09:00  INFO 4716 --- [ex-ch03] [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-20T17:27:24.454+09:00  INFO 4716 --- [ex-ch03] [RMI TCP Connection(15)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-20T17:27:24.457+09:00  INFO 4716 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-20T17:27:25.754+09:00  INFO 15428 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 15428 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-20T17:27:25.756+09:00  INFO 15428 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-20T17:27:25.779+09:00  INFO 15428 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-20T17:27:25.779+09:00  INFO 15428 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-20T17:27:26.152+09:00  WARN 15428 --- [ex-ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-20T17:27:26.350+09:00  INFO 15428 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-20T17:27:26.358+09:00  INFO 15428 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-20T17:27:26.358+09:00  INFO 15428 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-20T17:27:26.383+09:00  INFO 15428 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-20T17:27:26.383+09:00  INFO 15428 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 603 ms
+2025-10-20T17:27:26.448+09:00  INFO 15428 --- [ex-ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-20T17:27:26.736+09:00  INFO 15428 --- [ex-ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-20T17:27:26.759+09:00  INFO 15428 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-20T17:27:26.764+09:00  INFO 15428 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Started Ch03Application in 1.247 seconds (process running for 1.645)
+2025-10-20T17:27:26.766+09:00  INFO 15428 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : ================
+2025-10-20T17:27:26.766+09:00  INFO 15428 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 정보 수준
+2025-10-20T17:27:26.766+09:00  WARN 15428 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 경고 수준
+2025-10-20T17:27:26.766+09:00 ERROR 15428 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 에러 수준
+2025-10-20T17:27:26.767+09:00  INFO 15428 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : ================
+2025-10-20T17:27:33.802+09:00  INFO 15428 --- [ex-ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-20T17:27:33.803+09:00  INFO 15428 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-20T17:27:33.803+09:00  INFO 15428 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-20T17:27:45.011+09:00  INFO 15428 --- [ex-ch03] [http-nio-8090-exec-5] com.example.demo.service.MyService       : 안녕, 좋은 하루~!
+2025-10-20T17:29:00.638+09:00  INFO 15428 --- [ex-ch03] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 27 class path changes (0 additions, 0 deletions, 27 modifications)
+2025-10-20T17:29:00.640+09:00  INFO 15428 --- [ex-ch03] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-20T17:29:00.643+09:00  INFO 15428 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-20T17:29:00.713+09:00  INFO 15428 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 15428 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-20T17:29:00.713+09:00  INFO 15428 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-20T17:29:01.471+09:00  INFO 1764 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 1764 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-20T17:29:01.472+09:00  INFO 1764 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-20T17:29:01.496+09:00  INFO 1764 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-20T17:29:01.496+09:00  INFO 1764 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-20T17:29:01.871+09:00  WARN 1764 --- [ex-ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-20T17:29:02.068+09:00  INFO 1764 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-20T17:29:02.076+09:00  INFO 1764 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-20T17:29:02.077+09:00  INFO 1764 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-20T17:29:02.101+09:00  INFO 1764 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-20T17:29:02.102+09:00  INFO 1764 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 604 ms
+2025-10-20T17:29:02.165+09:00  INFO 1764 --- [ex-ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-20T17:29:02.450+09:00  INFO 1764 --- [ex-ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-20T17:29:02.472+09:00  INFO 1764 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-20T17:29:02.477+09:00  INFO 1764 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Started Ch03Application in 1.243 seconds (process running for 1.633)
+2025-10-20T17:29:02.479+09:00  INFO 1764 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : ================
+2025-10-20T17:29:02.479+09:00  INFO 1764 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 정보 수준
+2025-10-20T17:29:02.479+09:00  WARN 1764 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 경고 수준
+2025-10-20T17:29:02.479+09:00 ERROR 1764 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 에러 수준
+2025-10-20T17:29:02.479+09:00  INFO 1764 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : ================
+2025-10-20T17:29:05.903+09:00  INFO 1764 --- [ex-ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-20T17:29:05.903+09:00  INFO 1764 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-20T17:29:05.904+09:00  INFO 1764 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-20T17:31:10.423+09:00  INFO 1764 --- [ex-ch03] [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-20T17:31:10.425+09:00  INFO 1764 --- [ex-ch03] [RMI TCP Connection(10)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-20T17:31:10.428+09:00  INFO 1764 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-20T17:31:11.645+09:00  INFO 12540 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 12540 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-20T17:31:11.646+09:00  INFO 12540 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-20T17:31:11.670+09:00  INFO 12540 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-20T17:31:11.670+09:00  INFO 12540 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-20T17:31:12.052+09:00  WARN 12540 --- [ex-ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-20T17:31:12.252+09:00  INFO 12540 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-20T17:31:12.260+09:00  INFO 12540 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-20T17:31:12.260+09:00  INFO 12540 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-20T17:31:12.285+09:00  INFO 12540 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-20T17:31:12.286+09:00  INFO 12540 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 615 ms
+2025-10-20T17:31:12.326+09:00  WARN 12540 --- [ex-ch03] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'studentRestController' defined in file [D:\springboot\ThisIsBackend\ex-ch03\bin\main\com\lej\crud_proj\controller\StudentRestController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'studentService' defined in file [D:\springboot\ThisIsBackend\ex-ch03\bin\main\com\lej\crud_proj\service\StudentService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.lej.crud_proj.mapper.StudentMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-10-20T17:31:12.328+09:00  INFO 12540 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-20T17:31:12.337+09:00  INFO 12540 --- [ex-ch03] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-20T17:31:12.349+09:00 ERROR 12540 --- [ex-ch03] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.lej.crud_proj.service.StudentService required a bean of type 'com.lej.crud_proj.mapper.StudentMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.lej.crud_proj.mapper.StudentMapper' in your configuration.
+
+2025-10-20T17:31:14.493+09:00  INFO 15676 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 15676 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-20T17:31:14.495+09:00  INFO 15676 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-20T17:31:14.517+09:00  INFO 15676 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-20T17:31:14.518+09:00  INFO 15676 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-20T17:31:14.898+09:00  WARN 15676 --- [ex-ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-20T17:31:15.100+09:00  INFO 15676 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-20T17:31:15.108+09:00  INFO 15676 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-20T17:31:15.108+09:00  INFO 15676 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-20T17:31:15.134+09:00  INFO 15676 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-20T17:31:15.134+09:00  INFO 15676 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 616 ms
+2025-10-20T17:31:15.175+09:00  WARN 15676 --- [ex-ch03] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'studentRestController' defined in file [D:\springboot\ThisIsBackend\ex-ch03\bin\main\com\lej\crud_proj\controller\StudentRestController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'studentService' defined in file [D:\springboot\ThisIsBackend\ex-ch03\bin\main\com\lej\crud_proj\service\StudentService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.lej.crud_proj.mapper.StudentMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-10-20T17:31:15.176+09:00  INFO 15676 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-20T17:31:15.185+09:00  INFO 15676 --- [ex-ch03] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-20T17:31:15.197+09:00 ERROR 15676 --- [ex-ch03] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.lej.crud_proj.service.StudentService required a bean of type 'com.lej.crud_proj.mapper.StudentMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.lej.crud_proj.mapper.StudentMapper' in your configuration.
+
