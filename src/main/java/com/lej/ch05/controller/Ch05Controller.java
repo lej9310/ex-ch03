@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.lej.ch05.controller.service.Ch05Service;
+import com.lej.ch05.service.Ch05Service;
 
 @RestController
 @RequestMapping("/ch05")
