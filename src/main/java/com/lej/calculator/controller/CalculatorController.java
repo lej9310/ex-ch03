@@ -1,4 +1,4 @@
-package com.example.demo.calculator.controller;
+package com.lej.calculator.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.calculator.dto.CalculationRequest;
-import com.example.demo.calculator.dto.CalculatorResponse;
-import com.example.demo.calculator.service.CalculatorService;
+import com.lej.calculator.dto.CalculationRequest;
+import com.lej.calculator.dto.CalculatorResponse;
+import com.lej.calculator.service.CalculatorService;
 
 @RestController
 @RequestMapping("calculator") // 웹 요청을 처리해야 할 URL 패턴을 지정

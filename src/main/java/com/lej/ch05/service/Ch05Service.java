@@ -1,4 +1,4 @@
-package com.lej.ch05.controller.service;
+package com.lej.ch05.service;
 
 import org.springframework.stereotype.Service;
 
