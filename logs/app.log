@@ -1045,3 +1045,179 @@ Action:
 
 Consider defining a bean of type 'com.lej.crud_proj.mapper.StudentMapper' in your configuration.
 
+2025-10-20T17:32:01.474+09:00  INFO 15572 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 15572 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-20T17:32:01.476+09:00  INFO 15572 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-20T17:32:01.499+09:00  INFO 15572 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-20T17:32:01.499+09:00  INFO 15572 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-20T17:32:01.876+09:00  WARN 15572 --- [ex-ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-20T17:32:02.075+09:00  INFO 15572 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-20T17:32:02.083+09:00  INFO 15572 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-20T17:32:02.083+09:00  INFO 15572 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-20T17:32:02.108+09:00  INFO 15572 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-20T17:32:02.108+09:00  INFO 15572 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 609 ms
+2025-10-20T17:32:02.148+09:00  WARN 15572 --- [ex-ch03] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'studentRestController' defined in file [D:\springboot\ThisIsBackend\ex-ch03\bin\main\com\lej\crud_proj\controller\StudentRestController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'studentService' defined in file [D:\springboot\ThisIsBackend\ex-ch03\bin\main\com\lej\crud_proj\service\StudentService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.lej.crud_proj.mapper.StudentMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-10-20T17:32:02.149+09:00  INFO 15572 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-20T17:32:02.158+09:00  INFO 15572 --- [ex-ch03] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-20T17:32:02.170+09:00 ERROR 15572 --- [ex-ch03] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.lej.crud_proj.service.StudentService required a bean of type 'com.lej.crud_proj.mapper.StudentMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.lej.crud_proj.mapper.StudentMapper' in your configuration.
+
+2025-10-20T17:32:20.697+09:00  INFO 12436 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 12436 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-20T17:32:20.698+09:00  INFO 12436 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-20T17:32:20.721+09:00  INFO 12436 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-20T17:32:20.722+09:00  INFO 12436 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-20T17:32:21.096+09:00  WARN 12436 --- [ex-ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-20T17:32:21.295+09:00  INFO 12436 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-20T17:32:21.303+09:00  INFO 12436 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-20T17:32:21.303+09:00  INFO 12436 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-20T17:32:21.328+09:00  INFO 12436 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-20T17:32:21.328+09:00  INFO 12436 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 606 ms
+2025-10-20T17:32:21.368+09:00  WARN 12436 --- [ex-ch03] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'studentRestController' defined in file [D:\springboot\ThisIsBackend\ex-ch03\bin\main\com\lej\crud_proj\controller\StudentRestController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'studentService' defined in file [D:\springboot\ThisIsBackend\ex-ch03\bin\main\com\lej\crud_proj\service\StudentService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.lej.crud_proj.mapper.StudentMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-10-20T17:32:21.370+09:00  INFO 12436 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-20T17:32:21.379+09:00  INFO 12436 --- [ex-ch03] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-20T17:32:21.391+09:00 ERROR 12436 --- [ex-ch03] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.lej.crud_proj.service.StudentService required a bean of type 'com.lej.crud_proj.mapper.StudentMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.lej.crud_proj.mapper.StudentMapper' in your configuration.
+
+2025-10-20T17:33:58.075+09:00  INFO 3320 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 3320 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-20T17:33:58.076+09:00  INFO 3320 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-20T17:33:58.099+09:00  INFO 3320 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-20T17:33:58.099+09:00  INFO 3320 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-20T17:33:58.471+09:00  WARN 3320 --- [ex-ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-20T17:33:58.667+09:00  INFO 3320 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-20T17:33:58.675+09:00  INFO 3320 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-20T17:33:58.675+09:00  INFO 3320 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-20T17:33:58.700+09:00  INFO 3320 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-20T17:33:58.700+09:00  INFO 3320 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 600 ms
+2025-10-20T17:33:58.740+09:00  WARN 3320 --- [ex-ch03] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'studentRestController' defined in file [D:\springboot\ThisIsBackend\ex-ch03\bin\main\com\lej\crud_proj\controller\StudentRestController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'studentService' defined in file [D:\springboot\ThisIsBackend\ex-ch03\bin\main\com\lej\crud_proj\service\StudentService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.lej.crud_proj.mapper.StudentMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-10-20T17:33:58.741+09:00  INFO 3320 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-20T17:33:58.750+09:00  INFO 3320 --- [ex-ch03] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-20T17:33:58.761+09:00 ERROR 3320 --- [ex-ch03] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.lej.crud_proj.service.StudentService required a bean of type 'com.lej.crud_proj.mapper.StudentMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.lej.crud_proj.mapper.StudentMapper' in your configuration.
+
+2025-10-20T17:37:47.552+09:00  INFO 760 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 760 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-20T17:37:47.553+09:00  INFO 760 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-20T17:37:47.576+09:00  INFO 760 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-20T17:37:47.576+09:00  INFO 760 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-20T17:37:47.946+09:00  WARN 760 --- [ex-ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-20T17:37:48.141+09:00  INFO 760 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-20T17:37:48.149+09:00  INFO 760 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-20T17:37:48.149+09:00  INFO 760 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-20T17:37:48.174+09:00  INFO 760 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-20T17:37:48.174+09:00  INFO 760 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 597 ms
+2025-10-20T17:37:48.237+09:00  INFO 760 --- [ex-ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-20T17:37:48.518+09:00  INFO 760 --- [ex-ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-20T17:37:48.540+09:00  INFO 760 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-20T17:37:48.545+09:00  INFO 760 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Started Ch03Application in 1.233 seconds (process running for 1.614)
+2025-10-20T17:37:48.547+09:00  INFO 760 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : ================
+2025-10-20T17:37:48.547+09:00  INFO 760 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 정보 수준
+2025-10-20T17:37:48.547+09:00  WARN 760 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 경고 수준
+2025-10-20T17:37:48.547+09:00 ERROR 760 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : 에러 수준
+2025-10-20T17:37:48.547+09:00  INFO 760 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : ================
+2025-10-20T17:37:50.503+09:00  INFO 760 --- [ex-ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-20T17:37:50.503+09:00  INFO 760 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-20T17:37:50.504+09:00  INFO 760 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-20T17:37:50.520+09:00  INFO 760 --- [ex-ch03] [http-nio-8090-exec-1] com.example.demo.service.MyService       : 안녕, 좋은 하루~!
+2025-10-20T17:38:38.929+09:00  INFO 760 --- [ex-ch03] [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-20T17:38:38.930+09:00  INFO 760 --- [ex-ch03] [RMI TCP Connection(10)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-20T17:38:38.934+09:00  INFO 760 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-20T17:38:40.174+09:00  INFO 15252 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 15252 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-20T17:38:40.175+09:00  INFO 15252 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-20T17:38:40.199+09:00  INFO 15252 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-20T17:38:40.199+09:00  INFO 15252 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-20T17:38:40.580+09:00  WARN 15252 --- [ex-ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-20T17:38:40.779+09:00  INFO 15252 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-20T17:38:40.787+09:00  INFO 15252 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-20T17:38:40.787+09:00  INFO 15252 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-20T17:38:40.812+09:00  INFO 15252 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-20T17:38:40.812+09:00  INFO 15252 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 613 ms
+2025-10-20T17:38:40.852+09:00  WARN 15252 --- [ex-ch03] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'studentRestController' defined in file [D:\springboot\ThisIsBackend\ex-ch03\bin\main\com\lej\crud_proj\controller\StudentRestController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'studentService' defined in file [D:\springboot\ThisIsBackend\ex-ch03\bin\main\com\lej\crud_proj\service\StudentService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.lej.crud_proj.mapper.StudentMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-10-20T17:38:40.854+09:00  INFO 15252 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-20T17:38:40.863+09:00  INFO 15252 --- [ex-ch03] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-20T17:38:40.874+09:00 ERROR 15252 --- [ex-ch03] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.lej.crud_proj.service.StudentService required a bean of type 'com.lej.crud_proj.mapper.StudentMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.lej.crud_proj.mapper.StudentMapper' in your configuration.
+
+2025-10-20T17:38:56.292+09:00  INFO 15132 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 15132 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-20T17:38:56.293+09:00  INFO 15132 --- [ex-ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-20T17:38:56.315+09:00  INFO 15132 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-20T17:38:56.316+09:00  INFO 15132 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-20T17:38:56.689+09:00  WARN 15132 --- [ex-ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-20T17:38:56.885+09:00  INFO 15132 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-20T17:38:56.893+09:00  INFO 15132 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-20T17:38:56.894+09:00  INFO 15132 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-20T17:38:56.919+09:00  INFO 15132 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-20T17:38:56.919+09:00  INFO 15132 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 603 ms
+2025-10-20T17:38:56.959+09:00  WARN 15132 --- [ex-ch03] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'studentRestController' defined in file [D:\springboot\ThisIsBackend\ex-ch03\bin\main\com\lej\crud_proj\controller\StudentRestController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'studentService' defined in file [D:\springboot\ThisIsBackend\ex-ch03\bin\main\com\lej\crud_proj\service\StudentService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.lej.crud_proj.mapper.StudentMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-10-20T17:38:56.960+09:00  INFO 15132 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-20T17:38:56.969+09:00  INFO 15132 --- [ex-ch03] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-20T17:38:56.981+09:00 ERROR 15132 --- [ex-ch03] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.lej.crud_proj.service.StudentService required a bean of type 'com.lej.crud_proj.mapper.StudentMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.lej.crud_proj.mapper.StudentMapper' in your configuration.
+
