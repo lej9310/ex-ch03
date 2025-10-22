@@ -1,12 +1,7 @@
 package com.lej;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 
 //@SpringBootApplication
 //@ComponentScan(basePackages = { "com.example.demo", "com.lej.calculator2", "com.lej.myForm", "com.lej.tymleaf",
@@ -15,10 +10,6 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 public class Ch03Application {
-
-	// 1. Logger 객체 생성
-	// SLF4J(Simple Logging Facade for Java) 프레임워크의 LoggerFactory 이용
-	private static final Logger Log = LoggerFactory.getLogger(Ch03Application.class);
 
 	// 2. 메인 메소드: Spring Boot 애플리케이션 실행
 	public static void main(String[] args) {
