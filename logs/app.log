@@ -172,3 +172,8 @@ java.lang.ClassCastException: class com.lej.crud_proj.domain.Student cannot be c
 2025-10-22T09:24:01.809+09:00  INFO 8260 --- [ex-ch03] [http-nio-8090-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
 2025-10-22T09:24:01.861+09:00  INFO 8260 --- [ex-ch03] [http-nio-8090-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@69f415d9
 2025-10-22T09:24:01.862+09:00  INFO 8260 --- [ex-ch03] [http-nio-8090-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-22T09:30:33.984+09:00  INFO 8260 --- [ex-ch03] [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-22T09:30:33.987+09:00  INFO 8260 --- [ex-ch03] [RMI TCP Connection(15)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22T09:30:33.990+09:00  INFO 8260 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-22T09:30:33.993+09:00  INFO 8260 --- [ex-ch03] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-22T09:30:33.995+09:00  INFO 8260 --- [ex-ch03] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
