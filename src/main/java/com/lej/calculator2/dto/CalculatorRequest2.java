@@ -6,7 +6,7 @@ public class CalculatorRequest2 {
 	private double num2;
 	private String operation;
 
-	// Getters
+	// Getters & Setters
 	public double getNum1() {
 		return num1;
 	}

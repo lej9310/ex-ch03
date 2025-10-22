@@ -10,6 +10,7 @@ import com.lej.mybatis.mapper.StudentMapper2;
 
 import lombok.RequiredArgsConstructor;
 
+//@RequiredArgsConstructor: Lombok에서 제공 >> 클래스의 특정 필드를 자동으로 포함시킨 생성자를 생성
 @Service
 @RequiredArgsConstructor
 @Transactional(readOnly = true)
@@ -45,7 +46,7 @@ public class StudentService2 {
 
 	@Transactional
 	public void deleteStudent(Long id) {
-		studentMapper2.delete(id);		
-	}	
-	
+		studentMapper2.delete(id);
+	}
+
 }

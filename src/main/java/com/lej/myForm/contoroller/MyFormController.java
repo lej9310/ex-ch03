@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.lej.myForm.dto.ArticleRequest;
 
 @RestController
-public class MyForm {
+public class MyFormController {
 
 	// 1. get 방식 >> 웹주소창에 테스트: 입력값이 url에 표시 => 보안 취약
 	// http://localhost:8080/article-get?title=get&content=get

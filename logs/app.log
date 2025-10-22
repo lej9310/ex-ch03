@@ -1194,3 +1194,297 @@ org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property o
 2025-10-22T14:27:26.684+09:00  INFO 23708 --- [ex-ch03] [http-nio-8090-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
 2025-10-22T14:27:26.735+09:00  INFO 23708 --- [ex-ch03] [http-nio-8090-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@5fe85240
 2025-10-22T14:27:26.737+09:00  INFO 23708 --- [ex-ch03] [http-nio-8090-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-22T14:39:28.701+09:00  INFO 23708 --- [ex-ch03] [http-nio-8090-exec-4] com.lej.service.MyService                : 안녕, 좋은 하루~!
+2025-10-22T14:39:52.852+09:00  INFO 23708 --- [ex-ch03] [RMI TCP Connection(22)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-22T14:39:52.854+09:00  INFO 23708 --- [ex-ch03] [RMI TCP Connection(22)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22T14:39:52.856+09:00  INFO 23708 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-22T14:39:52.859+09:00  INFO 23708 --- [ex-ch03] [RMI TCP Connection(22)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-22T14:39:52.861+09:00  INFO 23708 --- [ex-ch03] [RMI TCP Connection(22)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-22T14:39:54.090+09:00  INFO 4992 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Starting Ch03Application using Java 21.0.8 with PID 4992 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-22T14:39:54.092+09:00  INFO 4992 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : No active profile set, falling back to 1 default profile: "default"
+2025-10-22T14:39:54.115+09:00  INFO 4992 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-22T14:39:54.115+09:00  INFO 4992 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-22T14:39:54.679+09:00  INFO 4992 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-22T14:39:54.687+09:00  INFO 4992 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T14:39:54.688+09:00  INFO 4992 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22T14:39:54.722+09:00  INFO 4992 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T14:39:54.723+09:00  INFO 4992 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 608 ms
+2025-10-22T14:39:54.963+09:00  INFO 4992 --- [ex-ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-22T14:39:55.145+09:00  WARN 4992 --- [ex-ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-10-22T14:39:55.168+09:00  INFO 4992 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-22T14:39:55.173+09:00  INFO 4992 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Started Ch03Application in 1.317 seconds (process running for 1.7)
+2025-10-22T14:39:57.570+09:00  INFO 4992 --- [ex-ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22T14:39:57.571+09:00  INFO 4992 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-22T14:39:57.571+09:00  INFO 4992 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-22T14:39:57.591+09:00  INFO 4992 --- [ex-ch03] [http-nio-8090-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-22T14:39:57.643+09:00  INFO 4992 --- [ex-ch03] [http-nio-8090-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@163c4fef
+2025-10-22T14:39:57.644+09:00  INFO 4992 --- [ex-ch03] [http-nio-8090-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-22T15:00:24.678+09:00  INFO 4992 --- [ex-ch03] [RMI TCP Connection(31)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-22T15:00:24.680+09:00  INFO 4992 --- [ex-ch03] [RMI TCP Connection(31)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22T15:00:24.682+09:00  INFO 4992 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-22T15:00:24.684+09:00  INFO 4992 --- [ex-ch03] [RMI TCP Connection(31)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-22T15:00:24.686+09:00  INFO 4992 --- [ex-ch03] [RMI TCP Connection(31)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-22T15:00:25.936+09:00  INFO 5652 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Starting Ch03Application using Java 21.0.8 with PID 5652 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-22T15:00:25.938+09:00  INFO 5652 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : No active profile set, falling back to 1 default profile: "default"
+2025-10-22T15:00:25.961+09:00  INFO 5652 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-22T15:00:25.961+09:00  INFO 5652 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-22T15:00:26.518+09:00  INFO 5652 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-22T15:00:26.527+09:00  INFO 5652 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T15:00:26.527+09:00  INFO 5652 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22T15:00:26.553+09:00  INFO 5652 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T15:00:26.553+09:00  INFO 5652 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 592 ms
+2025-10-22T15:00:26.792+09:00  INFO 5652 --- [ex-ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-22T15:00:26.973+09:00  INFO 5652 --- [ex-ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-22T15:00:26.996+09:00  INFO 5652 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-22T15:00:27.002+09:00  INFO 5652 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Started Ch03Application in 1.302 seconds (process running for 1.684)
+2025-10-22T15:00:45.091+09:00  INFO 5652 --- [ex-ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22T15:00:45.091+09:00  INFO 5652 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-22T15:00:45.092+09:00  INFO 5652 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-22T15:00:45.109+09:00  INFO 5652 --- [ex-ch03] [http-nio-8090-exec-1] com.lej.service.MyService                : 안녕, 좋은 하루~!
+2025-10-22T15:01:28.722+09:00  WARN 5652 --- [ex-ch03] [http-nio-8090-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T15:01:44.002+09:00  INFO 5652 --- [ex-ch03] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 54 class path changes (10 additions, 10 deletions, 34 modifications)
+2025-10-22T15:01:44.004+09:00  INFO 5652 --- [ex-ch03] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22T15:01:44.007+09:00  INFO 5652 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-22T15:01:44.079+09:00  INFO 5652 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Starting Ch03Application using Java 21.0.8 with PID 5652 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-22T15:01:44.079+09:00  INFO 5652 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : No active profile set, falling back to 1 default profile: "default"
+2025-10-22T15:01:44.224+09:00  INFO 5652 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-22T15:01:44.224+09:00  INFO 5652 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T15:01:44.224+09:00  INFO 5652 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22T15:01:44.235+09:00  INFO 5652 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T15:01:44.235+09:00  INFO 5652 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 155 ms
+2025-10-22T15:01:45.063+09:00  INFO 4564 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Starting Ch03Application using Java 21.0.8 with PID 4564 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-22T15:01:45.065+09:00  INFO 4564 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : No active profile set, falling back to 1 default profile: "default"
+2025-10-22T15:01:45.088+09:00  INFO 4564 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-22T15:01:45.088+09:00  INFO 4564 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-22T15:01:45.645+09:00  INFO 4564 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-22T15:01:45.654+09:00  INFO 4564 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T15:01:45.654+09:00  INFO 4564 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22T15:01:45.679+09:00  INFO 4564 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T15:01:45.679+09:00  INFO 4564 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 590 ms
+2025-10-22T15:01:45.919+09:00  INFO 4564 --- [ex-ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-22T15:01:46.104+09:00  INFO 4564 --- [ex-ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-22T15:01:46.126+09:00  INFO 4564 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-22T15:01:46.132+09:00  INFO 4564 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Started Ch03Application in 1.305 seconds (process running for 1.697)
+2025-10-22T15:01:50.133+09:00  INFO 4564 --- [ex-ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22T15:01:50.133+09:00  INFO 4564 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-22T15:01:50.134+09:00  INFO 4564 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-22T15:43:44.195+09:00  INFO 4564 --- [ex-ch03] [RMI TCP Connection(51)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-22T15:43:44.197+09:00  INFO 4564 --- [ex-ch03] [RMI TCP Connection(51)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22T15:43:44.200+09:00  INFO 4564 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-22T15:43:45.440+09:00  INFO 19612 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Starting Ch03Application using Java 21.0.8 with PID 19612 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-22T15:43:45.441+09:00  INFO 19612 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : No active profile set, falling back to 1 default profile: "default"
+2025-10-22T15:43:45.466+09:00  INFO 19612 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-22T15:43:45.466+09:00  INFO 19612 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-22T15:43:46.019+09:00  INFO 19612 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-22T15:43:46.028+09:00  INFO 19612 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T15:43:46.028+09:00  INFO 19612 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22T15:43:46.053+09:00  INFO 19612 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T15:43:46.054+09:00  INFO 19612 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 588 ms
+2025-10-22T15:43:46.290+09:00  INFO 19612 --- [ex-ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-22T15:43:46.469+09:00  INFO 19612 --- [ex-ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-22T15:43:46.492+09:00  INFO 19612 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-22T15:43:46.497+09:00  INFO 19612 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Started Ch03Application in 1.296 seconds (process running for 1.698)
+2025-10-22T15:43:52.917+09:00  INFO 19612 --- [ex-ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22T15:43:52.918+09:00  INFO 19612 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-22T15:43:52.918+09:00  INFO 19612 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-22T16:01:20.313+09:00  INFO 19612 --- [ex-ch03] [RMI TCP Connection(27)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-22T16:01:20.314+09:00  INFO 19612 --- [ex-ch03] [RMI TCP Connection(27)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22T16:01:20.317+09:00  INFO 19612 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-22T16:01:34.357+09:00  INFO 7968 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Starting Ch03Application using Java 21.0.8 with PID 7968 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-22T16:01:34.358+09:00  INFO 7968 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : No active profile set, falling back to 1 default profile: "default"
+2025-10-22T16:01:34.381+09:00  INFO 7968 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-22T16:01:34.382+09:00  INFO 7968 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-22T16:01:34.938+09:00  INFO 7968 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-22T16:01:34.946+09:00  INFO 7968 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T16:01:34.946+09:00  INFO 7968 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22T16:01:34.972+09:00  INFO 7968 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T16:01:34.972+09:00  INFO 7968 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 590 ms
+2025-10-22T16:01:35.215+09:00  INFO 7968 --- [ex-ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-22T16:01:35.403+09:00  INFO 7968 --- [ex-ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-22T16:01:35.427+09:00  INFO 7968 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-22T16:01:35.432+09:00  INFO 7968 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Started Ch03Application in 1.322 seconds (process running for 1.717)
+2025-10-22T16:01:56.854+09:00  INFO 7968 --- [ex-ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22T16:01:56.854+09:00  INFO 7968 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-22T16:01:56.855+09:00  INFO 7968 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-22T16:01:56.865+09:00  WARN 7968 --- [ex-ch03] [http-nio-8090-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T16:03:40.433+09:00  INFO 7968 --- [ex-ch03] [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-22T16:03:40.434+09:00  INFO 7968 --- [ex-ch03] [RMI TCP Connection(10)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22T16:03:40.437+09:00  INFO 7968 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-22T16:03:41.688+09:00  INFO 11532 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Starting Ch03Application using Java 21.0.8 with PID 11532 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-22T16:03:41.689+09:00  INFO 11532 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : No active profile set, falling back to 1 default profile: "default"
+2025-10-22T16:03:41.714+09:00  INFO 11532 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-22T16:03:41.715+09:00  INFO 11532 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-22T16:03:42.274+09:00  INFO 11532 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-22T16:03:42.282+09:00  INFO 11532 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T16:03:42.282+09:00  INFO 11532 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22T16:03:42.307+09:00  INFO 11532 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T16:03:42.308+09:00  INFO 11532 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 593 ms
+2025-10-22T16:03:42.552+09:00  INFO 11532 --- [ex-ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-22T16:03:42.737+09:00  INFO 11532 --- [ex-ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-22T16:03:42.760+09:00  INFO 11532 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-22T16:03:42.765+09:00  INFO 11532 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Started Ch03Application in 1.315 seconds (process running for 1.703)
+2025-10-22T16:03:42.914+09:00  INFO 11532 --- [ex-ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22T16:03:42.914+09:00  INFO 11532 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-22T16:03:42.915+09:00  INFO 11532 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-22T16:03:42.926+09:00  WARN 11532 --- [ex-ch03] [http-nio-8090-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T16:03:43.866+09:00  WARN 11532 --- [ex-ch03] [http-nio-8090-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T16:05:25.336+09:00  WARN 11532 --- [ex-ch03] [http-nio-8090-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T16:13:38.548+09:00  WARN 11532 --- [ex-ch03] [http-nio-8090-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T16:14:36.339+09:00  WARN 11532 --- [ex-ch03] [http-nio-8090-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T16:16:39.266+09:00  WARN 11532 --- [ex-ch03] [http-nio-8090-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T16:22:56.944+09:00  INFO 11532 --- [ex-ch03] [RMI TCP Connection(29)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-22T16:22:56.946+09:00  INFO 11532 --- [ex-ch03] [RMI TCP Connection(29)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22T16:22:56.949+09:00  INFO 11532 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-22T16:22:58.176+09:00  INFO 23672 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Starting Ch03Application using Java 21.0.8 with PID 23672 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-22T16:22:58.177+09:00  INFO 23672 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : No active profile set, falling back to 1 default profile: "default"
+2025-10-22T16:22:58.200+09:00  INFO 23672 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-22T16:22:58.200+09:00  INFO 23672 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-22T16:22:58.759+09:00  INFO 23672 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-22T16:22:58.767+09:00  INFO 23672 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T16:22:58.767+09:00  INFO 23672 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22T16:22:58.793+09:00  INFO 23672 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T16:22:58.793+09:00  INFO 23672 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 593 ms
+2025-10-22T16:22:59.035+09:00  INFO 23672 --- [ex-ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-22T16:22:59.219+09:00  INFO 23672 --- [ex-ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-22T16:22:59.242+09:00  INFO 23672 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-22T16:22:59.247+09:00  INFO 23672 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Started Ch03Application in 1.307 seconds (process running for 1.687)
+2025-10-22T16:23:05.169+09:00  INFO 23672 --- [ex-ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22T16:23:05.169+09:00  INFO 23672 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-22T16:23:05.170+09:00  INFO 23672 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-22T16:23:05.180+09:00  WARN 23672 --- [ex-ch03] [http-nio-8090-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T16:23:25.743+09:00  WARN 23672 --- [ex-ch03] [http-nio-8090-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T16:23:58.844+09:00  WARN 23672 --- [ex-ch03] [http-nio-8090-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'multipart/form-data;boundary=--------------------------285767243370728387844656;charset=UTF-8' is not supported]
+2025-10-22T16:26:06.634+09:00  WARN 23672 --- [ex-ch03] [http-nio-8090-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T16:26:07.776+09:00  WARN 23672 --- [ex-ch03] [http-nio-8090-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T16:26:10.688+09:00  INFO 23672 --- [ex-ch03] [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-22T16:26:10.690+09:00  INFO 23672 --- [ex-ch03] [RMI TCP Connection(11)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22T16:26:10.693+09:00  INFO 23672 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-22T16:26:11.932+09:00  INFO 23540 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Starting Ch03Application using Java 21.0.8 with PID 23540 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-22T16:26:11.933+09:00  INFO 23540 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : No active profile set, falling back to 1 default profile: "default"
+2025-10-22T16:26:11.957+09:00  INFO 23540 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-22T16:26:11.957+09:00  INFO 23540 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-22T16:26:12.514+09:00  INFO 23540 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-22T16:26:12.522+09:00  INFO 23540 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T16:26:12.523+09:00  INFO 23540 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22T16:26:12.548+09:00  INFO 23540 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T16:26:12.548+09:00  INFO 23540 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 591 ms
+2025-10-22T16:26:12.787+09:00  INFO 23540 --- [ex-ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-22T16:26:12.968+09:00  INFO 23540 --- [ex-ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-22T16:26:12.993+09:00  INFO 23540 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-22T16:26:12.998+09:00  INFO 23540 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Started Ch03Application in 1.304 seconds (process running for 1.698)
+2025-10-22T16:26:15.543+09:00  INFO 23540 --- [ex-ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22T16:26:15.543+09:00  INFO 23540 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-22T16:26:15.544+09:00  INFO 23540 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-22T16:26:15.554+09:00  WARN 23540 --- [ex-ch03] [http-nio-8090-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T16:26:51.161+09:00  WARN 23540 --- [ex-ch03] [http-nio-8090-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T16:27:03.374+09:00  WARN 23540 --- [ex-ch03] [http-nio-8090-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T16:32:56.060+09:00  WARN 23540 --- [ex-ch03] [http-nio-8090-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T16:32:57.587+09:00  INFO 23540 --- [ex-ch03] [RMI TCP Connection(17)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-22T16:32:57.588+09:00  INFO 23540 --- [ex-ch03] [RMI TCP Connection(17)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22T16:32:57.591+09:00  INFO 23540 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-22T16:35:15.846+09:00  INFO 21268 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Starting Ch03Application using Java 21.0.8 with PID 21268 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-22T16:35:15.848+09:00  INFO 21268 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : No active profile set, falling back to 1 default profile: "default"
+2025-10-22T16:35:15.871+09:00  INFO 21268 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-22T16:35:15.871+09:00  INFO 21268 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-22T16:35:16.426+09:00  INFO 21268 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-22T16:35:16.434+09:00  INFO 21268 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T16:35:16.434+09:00  INFO 21268 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22T16:35:16.459+09:00  INFO 21268 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T16:35:16.459+09:00  INFO 21268 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 588 ms
+2025-10-22T16:35:16.698+09:00  INFO 21268 --- [ex-ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-22T16:35:16.883+09:00  INFO 21268 --- [ex-ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-22T16:35:16.906+09:00  INFO 21268 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-22T16:35:16.912+09:00  INFO 21268 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Started Ch03Application in 1.306 seconds (process running for 1.7)
+2025-10-22T16:35:18.819+09:00  INFO 21268 --- [ex-ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22T16:35:18.819+09:00  INFO 21268 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-22T16:35:18.820+09:00  INFO 21268 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-22T16:35:18.831+09:00  WARN 21268 --- [ex-ch03] [http-nio-8090-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T16:35:31.448+09:00  WARN 21268 --- [ex-ch03] [http-nio-8090-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T16:47:58.042+09:00  INFO 21268 --- [ex-ch03] [RMI TCP Connection(23)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-22T16:47:58.043+09:00  INFO 21268 --- [ex-ch03] [RMI TCP Connection(23)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22T16:47:58.046+09:00  INFO 21268 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-22T16:47:59.315+09:00  INFO 12756 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Starting Ch03Application using Java 21.0.8 with PID 12756 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-22T16:47:59.317+09:00  INFO 12756 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : No active profile set, falling back to 1 default profile: "default"
+2025-10-22T16:47:59.340+09:00  INFO 12756 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-22T16:47:59.340+09:00  INFO 12756 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-22T16:47:59.893+09:00  INFO 12756 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-22T16:47:59.901+09:00  INFO 12756 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T16:47:59.901+09:00  INFO 12756 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22T16:47:59.926+09:00  INFO 12756 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T16:47:59.926+09:00  INFO 12756 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 586 ms
+2025-10-22T16:48:00.167+09:00  INFO 12756 --- [ex-ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-22T16:48:00.350+09:00  INFO 12756 --- [ex-ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-22T16:48:00.372+09:00  INFO 12756 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-22T16:48:00.378+09:00  INFO 12756 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Started Ch03Application in 1.303 seconds (process running for 1.703)
+2025-10-22T17:13:25.366+09:00  INFO 12756 --- [ex-ch03] [RMI TCP Connection(33)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-22T17:13:25.368+09:00  INFO 12756 --- [ex-ch03] [RMI TCP Connection(33)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22T17:13:25.371+09:00  INFO 12756 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-22T17:13:36.071+09:00  INFO 22556 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Starting Ch03Application using Java 21.0.8 with PID 22556 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-22T17:13:36.072+09:00  INFO 22556 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : No active profile set, falling back to 1 default profile: "default"
+2025-10-22T17:13:36.095+09:00  INFO 22556 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-22T17:13:36.095+09:00  INFO 22556 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-22T17:13:36.659+09:00  INFO 22556 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-22T17:13:36.667+09:00  INFO 22556 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T17:13:36.667+09:00  INFO 22556 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22T17:13:36.695+09:00  INFO 22556 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T17:13:36.695+09:00  INFO 22556 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 599 ms
+2025-10-22T17:13:36.944+09:00  INFO 22556 --- [ex-ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-22T17:13:37.129+09:00  INFO 22556 --- [ex-ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-22T17:13:37.152+09:00  INFO 22556 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-22T17:13:37.157+09:00  INFO 22556 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Started Ch03Application in 1.327 seconds (process running for 1.726)
+2025-10-22T17:13:37.734+09:00  INFO 22556 --- [ex-ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22T17:13:37.735+09:00  INFO 22556 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-22T17:13:37.735+09:00  INFO 22556 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-22T17:13:37.746+09:00  WARN 22556 --- [ex-ch03] [http-nio-8090-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T17:13:39.546+09:00  WARN 22556 --- [ex-ch03] [http-nio-8090-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T17:13:42.732+09:00  WARN 22556 --- [ex-ch03] [http-nio-8090-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T17:14:09.893+09:00  WARN 22556 --- [ex-ch03] [http-nio-8090-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T17:14:38.881+09:00  WARN 22556 --- [ex-ch03] [http-nio-8090-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T17:14:39.410+09:00  WARN 22556 --- [ex-ch03] [http-nio-8090-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T17:14:47.951+09:00  INFO 22556 --- [ex-ch03] [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-22T17:14:47.952+09:00  INFO 22556 --- [ex-ch03] [RMI TCP Connection(9)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22T17:14:47.955+09:00  INFO 22556 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-22T17:14:49.183+09:00  INFO 3128 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Starting Ch03Application using Java 21.0.8 with PID 3128 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-22T17:14:49.184+09:00  INFO 3128 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : No active profile set, falling back to 1 default profile: "default"
+2025-10-22T17:14:49.207+09:00  INFO 3128 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-22T17:14:49.207+09:00  INFO 3128 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-22T17:14:49.760+09:00  INFO 3128 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-22T17:14:49.768+09:00  INFO 3128 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T17:14:49.768+09:00  INFO 3128 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22T17:14:49.793+09:00  INFO 3128 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T17:14:49.793+09:00  INFO 3128 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 585 ms
+2025-10-22T17:14:50.030+09:00  INFO 3128 --- [ex-ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-22T17:14:50.212+09:00  INFO 3128 --- [ex-ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-22T17:14:50.234+09:00  INFO 3128 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-22T17:14:50.240+09:00  INFO 3128 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Started Ch03Application in 1.296 seconds (process running for 1.69)
+2025-10-22T17:14:54.714+09:00  INFO 3128 --- [ex-ch03] [http-nio-8090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22T17:14:54.714+09:00  INFO 3128 --- [ex-ch03] [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-22T17:14:54.714+09:00  INFO 3128 --- [ex-ch03] [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-22T17:16:31.627+09:00  WARN 3128 --- [ex-ch03] [http-nio-8090-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T17:16:31.984+09:00  WARN 3128 --- [ex-ch03] [http-nio-8090-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T17:20:02.910+09:00  INFO 3128 --- [ex-ch03] [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-22T17:20:02.911+09:00  INFO 3128 --- [ex-ch03] [RMI TCP Connection(14)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22T17:20:02.914+09:00  INFO 3128 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-22T17:20:19.095+09:00  INFO 21616 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Starting Ch03Application using Java 21.0.8 with PID 21616 (D:\springboot\ThisIsBackend\ex-ch03\bin\main started by YONSAI in D:\springboot\ThisIsBackend\ex-ch03)
+2025-10-22T17:20:19.097+09:00  INFO 21616 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : No active profile set, falling back to 1 default profile: "default"
+2025-10-22T17:20:19.120+09:00  INFO 21616 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-22T17:20:19.120+09:00  INFO 21616 --- [ex-ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-22T17:20:19.680+09:00  INFO 21616 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-22T17:20:19.688+09:00  INFO 21616 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T17:20:19.688+09:00  INFO 21616 --- [ex-ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22T17:20:19.714+09:00  INFO 21616 --- [ex-ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T17:20:19.714+09:00  INFO 21616 --- [ex-ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 594 ms
+2025-10-22T17:20:19.952+09:00  INFO 21616 --- [ex-ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-22T17:20:20.134+09:00  INFO 21616 --- [ex-ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-22T17:20:20.157+09:00  INFO 21616 --- [ex-ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-22T17:20:20.162+09:00  INFO 21616 --- [ex-ch03] [restartedMain] com.lej.Ch03Application                  : Started Ch03Application in 1.305 seconds (process running for 1.706)
+2025-10-22T17:20:26.249+09:00  INFO 21616 --- [ex-ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22T17:20:26.250+09:00  INFO 21616 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-22T17:20:26.250+09:00  INFO 21616 --- [ex-ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-22T17:20:39.536+09:00  WARN 21616 --- [ex-ch03] [http-nio-8090-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T17:20:40.135+09:00  WARN 21616 --- [ex-ch03] [http-nio-8090-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T17:21:39.439+09:00  WARN 21616 --- [ex-ch03] [http-nio-8090-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T17:21:40.038+09:00  WARN 21616 --- [ex-ch03] [http-nio-8090-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-10-22T17:25:47.752+09:00  INFO 21616 --- [ex-ch03] [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-22T17:25:47.753+09:00  INFO 21616 --- [ex-ch03] [RMI TCP Connection(13)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22T17:25:47.757+09:00  INFO 21616 --- [ex-ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
